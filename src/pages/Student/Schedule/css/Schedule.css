@@ -2,3 +2,217 @@
     background-color: #213555;
     height: 100vh;
 }
+
+.scheduleContainerHeader {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.scheduleListContainer {
+    position: absolute;
+    top: 20vh;
+    left: 9vw;
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 82vw;
+    height: 72vh;
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+
+
+.dayOfWeekHeaderMON {
+    position: absolute;
+    top: 4vh;
+    left: 13vw;
+    display: inline-block;
+    width: 10.8vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.dayOfWeekHeaderTUE {
+    position: absolute;
+    top: 4vh;
+    left: 24vw;
+    display: inline-block;
+    width: 10.8vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.dayOfWeekHeaderWED {
+    position: absolute;
+    top: 4vh;
+    left: 35vw;
+    display: inline-block;
+    width: 10.8vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.dayOfWeekHeaderTHU {
+    position: absolute;
+    top: 4vh;
+    left: 46vw;
+    display: inline-block;
+    width: 10.8vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.dayOfWeekHeaderFRI {
+    position: absolute;
+    top: 4vh;
+    left: 57vw;
+    display: inline-block;
+    width: 10.8vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.dayOfWeekHeaderSAT {
+    position: absolute;
+    top: 4vh;
+    left: 68vw;
+    display: inline-block;
+    width: 10.8vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.timeOfDayHeader1 {
+    position: absolute;
+    top: 12vh;
+    left: 2.5vw;
+    display: inline-block;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+.timeOfDayHeader2 {
+    position: absolute;
+    top: 22vh;
+    left: 2.5vw;
+    display: inline-block;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+.timeOfDayHeader3 {
+    position: absolute;
+    top: 32vh;
+    left: 2.5vw;
+    display: inline-block;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+.timeOfDayHeader4 {
+    position: absolute;
+    top: 42vh;
+    left: 2.5vw;
+    display: inline-block;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+.timeOfDayHeader5 {
+    position: absolute;
+    top: 52vh;
+    left: 2.5vw;
+    display: inline-block;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+.timeOfDayHeader6 {
+    position: absolute;
+    top: 62vh;
+    left: 2.5vw;
+    display: inline-block;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+
+.timeSlotCell {
+    position: absolute;
+    display: inline-block;
+    width: 10.8vw;
+    height: 9.6vh;
+    padding: 0.5rem;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.timeSlotCell div {
+    font-weight: 900;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    height: 7.5vh;
+    width: 10vw;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.5vw;
+    text-align: center;
+}
+.timeSlotCell div::-webkit-scrollbar {
+    width: 0.1rem;
+    background-color: #fff;
+}
+
+.MON_TimeSlot {
+    left: 13vw;
+}
+.TUE_TimeSlot {
+    left: 24vw;
+}
+.WED_TimeSlot {
+    left: 35vw;
+}
+.THU_TimeSlot {
+    left: 46vw;
+}
+.FRI_TimeSlot {
+    left: 57vw;
+}
+.SAT_TimeSlot {
+    left: 68vw;
+}
+
+.row1 {
+    top: 9vh;
+}
+.row2 {
+    top: 19vh;
+}
+.row3 {
+    top: 29vh;
+}
+.row4 {
+    top: 39vh;
+}
+.row5 {
+    top: 49vh;
+}
+.row6 {
+    top: 59vh;
+}
+
+
+
+
+.unoccupiedTimeSlots {
+    background-color: #657999;
+    color: #000;
+}
+.occupiedTimeSlots {
+    background-color: #102444;
+    color: #fff;
+}
