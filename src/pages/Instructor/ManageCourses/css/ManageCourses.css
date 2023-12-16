@@ -1,0 +1,88 @@
+.manageCoursesBody {
+    background-color: #213555;
+    height: 100vh;
+}
+
+.classCoursesContainer h1 {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.classCoursesSearchBarContainer {
+    position: absolute;
+    top: 22vh;
+    left: 10vw;
+    background-color: transparent;
+}
+.classCoursesSearchBarContainer input {
+    padding: 1rem;
+    width: 20vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    border-radius: 5px;
+}
+
+.classCoursesListContainer {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 80vw;
+    height: 62vh;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.classCoursesListContainer table {
+    width: 100%; /* Make the table take up 100% of the container width */
+    border-collapse: collapse; /* Collapse borders to avoid spacing between cells */
+}
+
+.classCoursesListContainer table thead th {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-weight: 800;
+    padding: 1rem; /* Add padding to the th cells for spacing */
+    text-align: left; /* Align text to the left within th cells */
+    background-color: #333; /* Add background color for better visibility */
+    color: #fff; /* Set text color for better visibility */
+}
+
+.classCoursesListContainer table tbody td {
+    font-size: 1.2rem; /* Adjust the font size for table body cells */
+    padding: 1rem; /* Add padding to the td cells for spacing */
+    text-align: left; /* Align text to the left within td cells */
+    border-top: 1px solid #ddd; /* Add a border between rows for better separation */
+}
+
+.classCoursesListContainer table tbody tr:last-child td {
+    border-bottom: 1px solid #000000; /* Add a border at the bottom of the last row for better separation */
+}
+
+.classCoursesListContainer table tbody tr:hover {
+    background-color: #f5f5f5; /* Add a background color on hover for better interaction */
+}
+
+.classCoursesListContainer table tbody td:last-child button.blue-button {
+    background-color: #3498db; /* Set the background color to a shade of blue */
+    color: #fff; /* Set the text color to white */
+    padding: 8px 12px; /* Adjust padding for better button appearance */
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover for better user interaction */
+    font-size: 1rem; /* Set the font size as needed */
+}
+
+/* Change button style on hover for better feedback */
+.classCoursesListContainer table tbody td:last-child button.blue-button:hover {
+    background-color: #2980b9; /* Darker shade of blue on hover */
+}

@@ -1,0 +1,50 @@
+/* calendar.css */
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 50px;
+  background-size: auto; /* Show the image at its original size */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  background-position: right center; /* Position the background image at the right center of the container */
+  color: white; /* Keep the background fixed while scrolling */
+}
+
+.centered-content {
+  text-align: center;
+  font-family: montserrat;
+  background-color: #F0F0F0;
+  padding: 50px;
+  border: 1px solid #213555;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid #213555;
+  /* Center the text within centered-content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add relative positioning for pseudo-element */
+}
+
+.centered-content::before {
+  content: "School Calendar";
+  display: inline-block;
+  background-color: #213555; /* Background color for the bordered text */
+  padding: 5px 15px; /* Adjust padding for the bordered text */
+  border: 2px solid #213555; /* Border style for the bordered text */
+  border-radius: 5px;
+  position: top;
+  margin: 5px;
+  z-index: 1; /* Place it above the background */
+}
+
+/* Add spacing for elements within centered-content */
+.centered-content p {
+  color:black;
+  margin: 10px 0;
+}

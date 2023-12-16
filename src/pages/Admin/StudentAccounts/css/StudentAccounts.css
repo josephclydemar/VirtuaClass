@@ -1,0 +1,248 @@
+.studentAccountsBody {
+    background-color: #213555;
+    height: 100vh;
+}
+
+.application__navbar {
+    width : inherit;
+    height : 4rem;
+    background-color : #D9D9D9;
+    padding : .2rem 1.8rem;
+}
+
+
+.application__navbar > span > p {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+
+}
+.application__navbar > span {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.application__navbar > span > button {
+    background-color : #4F709C;
+    padding : .6rem 1.2rem;
+    border-radius : 8px;
+    font-size: 1.4rem;
+    color : white;
+    font-weight : 500;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+
+}
+
+
+
+.studentAccountsListContainer {
+    position: absolute;
+    border-radius: 10px;
+    top: 12vh;
+    left: 2vw;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: white;
+    padding: 2rem;
+    font-size: 1rem;
+    height: 70vh;
+    width: 25vw;
+}
+
+.studentAccountsSearchBox input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 3rem;
+    border: 2px solid black;
+    border-radius: 0.9rem;
+}
+
+.studentsearch{
+    flex: 1; 
+    text-align: center;
+    padding: 8px;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none; 
+    outline: none; 
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.studentAccountsListContainer h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+.studentAccountsIndividualButton {
+    background-color: #c20;
+    width: 100%;
+}
+
+.studentAccountsCrudContainer {
+    position: absolute;
+    top: 12vh;
+    left: 30vw;
+    display: inline-block;
+    background-color: #E5D283;
+    width: 50vw;
+    height: 80vh;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.studname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 0.4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.studemail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 0.4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.guardname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 0.4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.guardcontact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 0.4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.coursesTakenContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 0.4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 20vw;
+}
+.coursesAvailableContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0;
+    margin-bottom: 0.4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 20vw;
+}
+.studentAccountsCrudContainer h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.studentAccountsButtonsContainer {
+    position: absolute;
+    top: 12vh;
+    left: 81vw;
+    background-color: transparent;
+    margin: 0;
+    color: #fff;
+}
+
+/* Button Containers */
+.updateStudentButtonContainer {
+    margin-top: 3vh;
+    padding: 0;
+}
+
+.blockStudentButtonContainer {
+    margin-top: 3vh;
+    padding: 0;
+}
+
+.deleteStudentButtonContainer {
+    margin-top: 3vh;
+    padding: 0;
+}
+
+/* Buttons */
+.updateStudentButtonContainer button {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.1rem;
+    background-color: #79f;
+    padding: 2vh;
+    width: 14vw;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #333;
+}
+.blockStudentButtonContainer button {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.1rem;
+    background-color: #79f;
+    padding: 2vh;
+    width: 14vw;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #333;
+}
+.deleteStudentButtonContainer button {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.1rem;
+    background-color: #e50;
+    padding: 2vh;
+    width: 14vw;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #333;
+}
+
+/* Button Hover Effects */
+.updateStudentButtonContainer button:hover {
+    background-color: #46d;
+}
+.blockStudentButtonContainer button:hover {
+    background-color: #46d;
+}
+.deleteStudentButtonContainer button:hover {
+    background-color: #46d;
+}
+
+

@@ -1,0 +1,61 @@
+/* src/GeneralSchoolInfo.css */
+
+body {
+    background-image: url('../../../../public/img/Dashboard.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.School-Information {
+    font-family: Arial, sans-serif;
+    background-color: #CDCACA;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.School-Information h1 {
+    color: #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.School-Information p {
+    color: #555;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    margin-bottom: 10px;
+}
+
+.generalInfoContact {
+  color: #000;
+  font-weight: 900;
+}
+
+
+.enroll-button {
+  align-self: flex-end; /* Align button to the right */
+  margin-top: 20px; /* Add margin for spacing */
+  background-color: #213555; /* Set the button background color */
+  color: #fff; /* Set the text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border-radius: 20px; /* Set the border radius */
+  text-decoration: none; /* Remove underlines (if any) */
+  border: none; /* Remove the default button border */
+  cursor: pointer;
+  font-weight: 900;
+  /* Add any other styles you want for the button */
+}
+
+.enroll-button:hover {
+  background-color: #E5D283; /* Change background color on hover */
+  color: #100F0F;
+}

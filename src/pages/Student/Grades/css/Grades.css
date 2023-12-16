@@ -1,0 +1,76 @@
+.gradesBody {
+    background-color: #213555;
+    height: 100vh;
+}
+
+.gradesContainer h1 {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.gradeSearchBox {
+    position: absolute;
+    top: 22vh;
+    left: 10vw;
+    background-color: transparent;
+}
+
+.gradeSearchBox input {
+    padding: 1rem;
+    width: 20vw;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    border-radius: 5px;
+}
+
+.gradesBox {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 80vw;
+    height: 62vh;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.gradesBox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gradesBox table thead th {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 1rem;
+    text-align: left;
+    background-color: #333;
+    color: #fff;
+}
+
+.gradesBox table tbody td {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+.gradesBox table tbody tr:last-child td {
+    border-bottom: 1px solid #000000;
+}
+
+.gradesBox table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+

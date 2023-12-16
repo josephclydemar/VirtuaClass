@@ -1,0 +1,109 @@
+
+
+.application__navbar {
+  width : inherit;
+  height : 4rem;
+  background-color : #D9D9D9;
+  padding : .2rem 1.8rem;
+}
+
+
+.application__navbar > span > p {
+  font-family: 'Sofia Sans Condensed', sans-serif;
+
+}
+.application__navbar > span {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.application__navbar > span > button {
+  background-color : #4F709C;
+  padding : .6rem 1.2rem;
+  border-radius : 8px;
+  font-size: 1.4rem;
+  color : white;
+  font-weight : 500;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+
+}
+
+
+.courseListBody {
+  background-color: #213555;
+  height: 100vh;
+}
+
+.courseListContainer h1 {
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.courseSearchBox {
+  position: absolute;
+  top: 22vh;
+  left: 10vw;
+  background-color: transparent;
+}
+
+.courseSearchBox input {
+  padding: 1rem;
+  width: 20vw;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  border-radius: 5px;
+}
+
+.courseListBox {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  display: inline-block;
+  background-color: #D9D9D9;
+  width: 80vw;
+  height: 62vh;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.courseListBox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.courseListBox table thead th {
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1rem;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+}
+
+.courseListBox table tbody td {
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+  border-top: 1px solid #ddd;
+}
+
+.courseListBox table tbody tr:last-child td {
+  border-bottom: 1px solid #000000;
+}
+
+.courseListBox table tbody tr:hover {
+  background-color: #f5f5f5;
+}

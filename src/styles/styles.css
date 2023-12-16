@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+/* index.css or App.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing:border-box;
+    font-family : montserrat;
+    border : none;
+    background-color : transparent;
+    overflow-x: hidden;
+}
+
+/* ACCORDION SECTION */
+
+.Accordion {    
+    margin: 2rem 2rem 0 2rem;
+}
+
+.Accordion__header {
+    display : flex;
+    align-items : center;
+    gap : 10px;
+    width : 100%;
+    text-align: left;
+    padding-left: 0.7rem;
+    background-color: #F0F0F0;
+    border-bottom : 1px solid rgb(194, 184, 184);
+}
+
+.Accordion__body {
+    display : none;
+    width : 100%;
+    text-align: left;
+}
+
+.Accordion__header__title {
+    padding : 10px 0;
+}
+
+.Accordion__body__text {
+    margin : 0 0 0 2.4rem;
+    padding : 20px 0;
+}
+
+.active {
+    display : block;
+}
+
+/* FAQ HEADING SECTION */
+
+.faq__heading {
+    margin : 2rem;
+    margin-bottom: 4rem;
+}
+
+.faq__heading > h1 {
+    font-size : 3rem;
+    padding : 10px 0;
+}
+
+.faq__heading > p {
+    color : rgb(245, 238, 238);
+    padding : 0 10px;
+}
+
+/* FAQ SECTION */
+
+.faq__section {
+    width : 100vw;
+    padding : 2rem 26rem;
+}
+
+.Navbar {
+    width : 100vw;
+    height : 8rem;
+    background-color : #F0F0F0;
+    border-bottom : 10px solid #E5D283;
+}
+
+.Navbar__container {
+    display : flex;
+    height : 100%;
+    width : 100%;
+    align-items : center;
+    justify-content : space-between;
+    padding : 0 8rem;
+}
+a {
+    text-decoration: none;
+}
+.Navbar__container > h1 > a {
+    text-transform: uppercase;
+    margin-right: 4rem;
+    font-size : 3rem;
+    font-family: 'Tapestry', cursive;
+    color : #213555;
+}
+
+.Navbar__container > div {
+    display  : flex;
+    gap : 2.8rem;
+}
+.Navbar__container > div > p > a {
+    color: #000;
+    font-size : 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.Navbar__container > a > p {
+    background-color : #213555;
+    padding : 12px 26px;
+    color : white;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 100px;
+    margin-left: auto;
+    display : flex;
+    align-items : center;
+    gap : 6px;
+}
+
+.Navbar__container > a > p:hover {
+    background-color: #E5D283; /* Change background color on hover */
+    color: #100F0F;
+}
+
+
+/* FORMINPUT & ENROLLMENT SECTION*/
+
+/* Style the form container */
+.enrollment__section {
+    text-align: center;
+    padding: 20px;
+}
+  
+  /* Style the form heading */
+.enrollment__heading h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.enrollment__section .form_cont {
+    position: absolute;
+    top: 22%;
+    left: 70%;
+}
+  
+  /* Style the form inputs using the FormInput component */
+.FormInput {
+    margin: 10px auto;
+    max-width: 300px;
+}
+  
+.FormInput input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+  
+  /* Style the submit button */
+.enrollment__section .enrollButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* Hover effect for the submit button */
+.enrollment__section .enrollButton:hover {
+    background-color: #0056b3;
+}

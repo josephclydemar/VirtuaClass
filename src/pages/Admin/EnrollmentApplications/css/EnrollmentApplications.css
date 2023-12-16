@@ -1,0 +1,183 @@
+.main__application {
+    position: relative;
+    width : 100vw;
+    height : 100vh;
+    background-color : #213555;
+}
+
+.main__application > .application__navbar {
+    width : inherit;
+    height : 4rem;
+    background-color : #D9D9D9;
+    padding : .2rem 1.8rem;
+}
+
+
+.application__navbar > span > p {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+
+}
+.application__navbar > span {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.application__navbar > span > button {
+    background-color : #4F709C;
+    padding : .6rem 1.2rem;
+    border-radius : 8px;
+    font-size: 1.4rem;
+    color : white;
+    font-weight : 500;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+
+}
+
+.main__application > .application__section {
+    width : 100%;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    height : calc(100% - 4rem);
+}
+
+.application__section > .section__content {
+    display : flex;
+    align-items : center;
+    justify-content: space-evenly;
+    width : inherit;
+    height : 100%;
+}
+
+.content__button {
+    display : flex;
+    flex-direction: column;
+    gap : 1.4rem;
+    margin-bottom :16rem;
+}
+
+.content__button > button {
+    padding : .8rem 1.8rem;
+    font-size : 1.2rem;
+    font-weight : bold;
+}
+
+.content__button > .button__accept {
+    background-color: #E5D283;
+}
+
+.content__button > .button__discard {
+    background-color : rgb(240, 39, 39);
+    color: white;
+}
+
+.section__content > .content__container {
+    width : 30vw;
+    overflow: visible;
+}
+.section__content > .content__container::-webkit-scrollbar {
+    width: 0.1rem;
+    background-color: #fff;
+}
+
+.section__content > .content__container > .container__heading {
+    font-size: 1.4rem;
+    position:relative;
+    right : 1vw;
+    background-color : #E5D283;
+    text-align : center;
+    font-weight : bold;
+    padding : 1rem 1.6rem;
+    border-radius : 10px;
+    width : 32vw;
+    font-size : 1.8rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+
+}
+
+.section__content > .content__container > .container__body {
+    background-color : white;
+    height : 68vh;
+    padding : 1.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.section__content > .content__container > .container__body::-webkit-scrollbar {
+    width: 0.4em;
+    background-color: #efefef;
+}
+
+.body__application {
+    display : flex;
+    flex-direction: column;
+    gap : 0.8rem;
+    padding: 1rem 1.4rem;
+}
+
+.body__application > table > tr {
+    padding : 0.8rem;
+    background-color : #4F709C;
+    border-radius : .8rem;
+    color : white;
+    text-align: center;
+    font-size : 1.4rem;
+    font-weight : 600;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+td {
+    padding: 1px;
+    border-radius: 5px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    
+}
+
+.enrollmentApplicationRecord td {
+    color: #fff;
+}
+
+.enrollmentApplicationRecord td button {
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.enrollmentApplicationRecord td .application__item {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.enrolledCoursesContainer {
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    padding: 2px;
+    width: fit-content;
+}
+
+.enrolledCoursesContainer h4 {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+.enrolledCoursesContainer table tr th {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.enrolledCoursesTable tr {
+    border: 1px solid #000;
+}
+
+.enrolledCoursesTable tr td {
+    border: 1px solid #000;
+}
+
+
+.container__body {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.detailsContainer h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
