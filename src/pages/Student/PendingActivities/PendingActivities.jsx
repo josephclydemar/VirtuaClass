@@ -108,9 +108,6 @@ function PendingActivities() {
     }
   }, [activities, search]);
 
-
-
-  
   return (
     <div className="pendingActivitiesBody">
       <nav className="application__navbar">
