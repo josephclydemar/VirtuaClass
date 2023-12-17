@@ -22,10 +22,9 @@ const Accordion = ({ title, body }) => {
                     </div>
                 </button>
                 <div className={`${isOpen ? "active" : ""} Accordion__body`}>
-                    <p className="Accordion__body__text">{body}</p>
+                    <p style={{ color: "white" }} className="Accordion__body__text">{body}</p>
                 </div>
             </div>
-
         </>
     );
 };
