@@ -105,8 +105,11 @@ const StudentAccounts = () => {
                                     setAvailableCourses(prev => allCourses.filter(
                                             (filterItem) => !(item.courses_taken_id).includes(filterItem._id))
                                         );
-                                    }
-                                }}
+                                    console.log("student button pressed");
+                                } else {
+                                    console.log("fuckin nothing");
+                                }
+                            }}
                                 className="studentAccountsIndividualButton">{ item.name }</button>
                             </td>
                             <td>{ item.email }</td>
@@ -114,7 +117,7 @@ const StudentAccounts = () => {
                     );
                 }));
         }
-    }, [studentsFiltered, students]);
+    }, [studentsFiltered, students, allCourses]);
 
     useEffect(() => {
         console.log('TAKEN COURSES ------------------------------ >');
@@ -142,9 +145,12 @@ const StudentAccounts = () => {
                                     })
                                     .then((result) => result.json())
                                     .then((value) => {
-                                        setStudentsUpdated(prev => !prev)
-                                        window.location.reload()    
+                                        setStudentsUpdated(prev => !prev);
+                                        console.log("remove button");
+     
                                     });
+                                } else {
+                                    console.log("remove, nothing happened");
                                 }
                             }}>
                                 {/* <IoIosRemoveCircle/> */}
@@ -155,7 +161,7 @@ const StudentAccounts = () => {
                 );
             }));
         }
-    }, [takenCourses, availableCourses]);
+    }, [takenCourses, availableCourses, studentsUpdated]);
 
     useEffect(() => {
         console.log('AVAILABLE COURSES ------------------------------ >');
@@ -184,8 +190,12 @@ const StudentAccounts = () => {
                                     .then((result) => result.json())
                                     .then((value) => {
                                         setStudentsUpdated(prev => !prev)
-                                        window.location.reload()    
+                                        console.log("add button");
+                                            
                                     });
+                                    setStudentsUpdated(prev => !prev);
+                                } else {
+                                    console.log("add, nothing happened");
                                 }
                             }}>
                                 {/* <IoIosAddCircle/> */}
@@ -196,7 +206,7 @@ const StudentAccounts = () => {
                 );
             }));
         }
-    }, [availableCourses, takenCourses]);
+    }, [availableCourses, takenCourses, studentsUpdated]);
 
 
 
