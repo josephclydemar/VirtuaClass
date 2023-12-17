@@ -327,8 +327,6 @@ const SiteSettings = () => {
                 setEvent(null);
             }
         }
-        
-        // You can add additional logic here, such as fetching events for the selected date.
     };
 
     useEffect(() => {
@@ -437,7 +435,7 @@ const SiteSettings = () => {
                     <div className="event-list">
                         <h3>Events:</h3>
                         <ul>
-                        <input
+                        <inputgit
                                 type="text"
                                 className="eventInputUpdateDeleteField"
                                 style={{
