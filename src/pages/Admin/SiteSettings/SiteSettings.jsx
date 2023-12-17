@@ -349,7 +349,27 @@ const SiteSettings = () => {
             </div>
 
             <div className="dashboard">
+                 <div className="faq-container">
+    <h2 className="faq-header">FAQ Section</h2>
+    {/* FAQ Table */}
+    <div>
+        <table className="faq-table">
+            <tr className='faq-input'>
+                <th className="faq-table-header">Question</th>
+                <th className="faq-table-header">Answer</th>
+                <th className="faq-table-header">Delete</th>
+            </tr>
+            {htmlFaqData !== null ? htmlFaqData : ''}
+        </table>
+        <button onClick={() => {
+            setFaqCount(prev => prev + 1);
+        }} className="add-faq-button">
+            Add New FAQ
+        </button>
+    </div>
+</div>
                 <div className="left-column">
+                    
                     <h1 className="siteSettingsH1">Site Settings</h1>
                     <form onSubmit={handleSubmit}>
                         <button disabled={isLoading} style={isLoading ? { opacity: 0.2 } : { opacity: 1 }}
@@ -395,11 +415,14 @@ const SiteSettings = () => {
                             />
                         </div>
                     </form>
+                    
                     {/* <FAQ /> */}
                 </div>
                 <div className="calendar-container">
                     <div className='calendar-heading'>
-                    <h2>School Calendar</h2>
+                    <h2 className='Titlelendar'>
+                        School Calendar
+                        </h2>
                     </div>
                     <div>
                     <ReactCalendar className="calendar" onChange={(e) => setSelectedDate(prev => e)} value={selectedDate} />
@@ -495,25 +518,7 @@ const SiteSettings = () => {
                         </div>
                     </form>
                 }
-             <div className="faq-container">
-    <h2 className="faq-header">FAQ Section</h2>
-    {/* FAQ Table */}
-    <div>
-        <table className="faq-table">
-            <tr className='faq-input'>
-                <th className="faq-table-header">Question</th>
-                <th className="faq-table-header">Answer</th>
-                <th className="faq-table-header">Delete</th>
-            </tr>
-            {htmlFaqData !== null ? htmlFaqData : ''}
-        </table>
-        <button onClick={() => {
-            setFaqCount(prev => prev + 1);
-        }} className="add-faq-button">
-            Add New FAQ
-        </button>
-    </div>
-</div>
+            
 
                 </div>
             </div>

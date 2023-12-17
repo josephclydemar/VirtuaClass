@@ -1,7 +1,8 @@
 /* Site.css */
 
-/* Style the left column */
 .dashboard {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #213555;
 }
 .admin-box {
@@ -10,11 +11,12 @@
 .left-column {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align items in the center of the column */
+  align-items: center; 
   justify-content: center;
   align-items: center;
   padding: 0.8rem 1.6rem;
-  width: fit-content; /* Adjust the width to match the content size */
+  width: fit-content; 
+  margin-bottom: 150px;
 }
 .left-column-button {
   display: flex;
@@ -49,7 +51,7 @@
 
 /* Set the text color of the input box to black */
 input {
-  padding: 10px;
+  padding: 7px;
   font-size: 1rem;
   background-color: white;
   color: black;
@@ -96,22 +98,22 @@ input {
   }
 
   
-  /* Add styles for other header inputs using similar classes */
-  
-  
   .input-column {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Align items in the center of the column */
+    align-items: center; 
     margin-top: auto;
     color: black;
-    padding: 1rem 2rem; /* Increase padding for the container */
+    padding: 1rem 2rem; 
     border-radius: 5px;
     background-color: #4F709C;
   }
 
-  
-  /* Style the calendar heading */
+.Titlelendar{
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  color:#000;
+}
+
 .calendar-heading {
     margin-top: 50  px;
     font-size: 1rem;
@@ -123,6 +125,12 @@ input {
     width: 100%;
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
+.react-calendar {
+  max-width: 300px; 
+  width: 100%; 
+  overflow: hidden;
+}
+
 .react-calendar__tile {
   font-family: 'Sofia Sans Condensed', sans-serif;
   font-size: large;
@@ -132,7 +140,8 @@ input {
   background-color: #fff;
   color: #000;
   font-family: 'Sofia Sans Condensed', sans-serif;
-  padding: 15px;
+  margin-top: 5px;
+  padding: 10px;
 }
 .eventInputUpdateDeleteField {
   background-color: #fff;
@@ -142,7 +151,6 @@ input {
 }
   
 /* Styles for the event list container */
-/* Site.css */
 
 .delete-icon {
   width: 30px; /* Set the desired width */
@@ -238,16 +246,43 @@ input {
 
 
 
-/* FAQ.css */
-.faq-container {
+/* Add or update styles for the calendar container */
+.calendar-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
-  margin-left: auto;
-  padding: 0.8rem 1.6rem;
+  justify-content: center;
+  flex: 1; /* Use flex property to make the calendar container take up available space */
+  max-width: 600px; /* Set a maximum width for the calendar */
+  align-self: flex-start; /* Align the container to the start (top) of the flex container */
+  margin-top: 15px;
 }
 
+.react-calendar {
+  max-width: 100%; /* Adjusted to take full available width */
+  width: 100%;
+  overflow: hidden;
+}
+/* Update styles for the calendar */
+.react-calendar__tile {
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: small; /* Adjust the font size as needed */
+  font-weight: 600;
+}
+
+/* Add styles for the FAQ container */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items in the center of the column */
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  width: fit-content;
+  margin-bottom: 40px;
+}
+
+/* Add styles for the FAQ header */
 .faq-header {
   font-size: 1rem;
   background-color: #E5D283;
@@ -260,11 +295,10 @@ input {
   font-family: 'Sofia Sans Condensed', sans-serif;
   margin-bottom: 10px;
   margin-top: 0.2rem;
-  margin-left: auto;
-  width: 100%
-
+  width: 100%;
 }
 
+/* Add styles for the FAQ table */
 .faq-table {
   background-color: #4F709C;
   max-height: 350px;
@@ -274,17 +308,17 @@ input {
   display: flex;
   flex-direction: column; /* Display items vertically */
   align-items: flex-start; /* Align items to the left side */
-  list-style: none;
   margin: 0;
   border-radius: 5px;
 }
-.input{
-  padding: 10px;
-    font-size: 1rem;
-    background-color: white;
-    color: black;
+
+/* Add styles for the FAQ input field */
+.faq-input {
+  color: black;
 }
-.add-faq-button{
+
+/* Add styles for the FAQ input button */
+.add-faq-button {
   background-color: #E5D283;
   color: black;
   font-weight: bold;
@@ -294,9 +328,7 @@ input {
   cursor: pointer;
   margin-top: 10px;
 }
-.faq-input{
-  color: black;
-}
+
 
 .faqInputField {
   color: #000;

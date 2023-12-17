@@ -38,59 +38,64 @@ const Site = () => {
 
   return (
     <div className="dashboard">
-      <div className="left-column">
-        <h1>Site Settings</h1>
-        <button onClick={handleLeftColumnButtonClick} className="left-column-button">
-          Update
-        </button>
-        <div className="input-column">
-          {headers.map((header, index) => (
-            <div key={index}>
-              <h2>{header}</h2>
-              <textarea
-                className={`header-input input-for-${index}`} // Assign class based on the index
-                placeholder={`Input for ${header}`}
-                rows="4" // Number of visible text lines
-              />
-            </div>
-          ))}
-        </div>
-        <FAQ />
-      </div>
-      <div className="calendar-container">
-        <div className='calendar-heading'>
-          <h2>School Calendar</h2>
-        </div>
-        <Calendar className="calendar" />
-        {/* Form to add events */}
-        <form onSubmit={(e) => { e.preventDefault(); addEvent(); }}>
-          <textarea
-            placeholder="Add an event"
-            rows="4"
-            style={{ width: '100%', height: '80px' }} // Adjust width and height
-            value={newEvent}
-            onChange={(e) => setNewEvent(e.target.value)}
-          />
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <button type="submit" className="add-button">Add</button>
-          </div>
-        </form>
-        {/* Display the list of events with Delete buttons */}
-        <div className="event-list">
-          <h3>Events:</h3>
-          <ul>
-            {events.map((event, index) => (
-              <li key={index}>
-                {event}
-                <button onClick={() => deleteEvent(index)} className="delete-button">
-                  DELETE GDSHDSHDH
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+        {/* Separate FAQ container */}
+  <div className="faq-container">
+    <FAQ />
+  </div>
+  <div className="calendar-container">
+    <div className='calendar-heading'>
+      <h2>School Calendar</h2>
     </div>
+    <Calendar className="calendar" />
+    {/* Form to add events */}
+    <form onSubmit={(e) => { e.preventDefault(); addEvent(); }}>
+      <textarea
+        placeholder="Add an event"
+        rows="4"
+        style={{ width: '100%', height: '80px' }} // Adjust width and height
+        value={newEvent}
+        onChange={(e) => setNewEvent(e.target.value)}
+      />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <button type="submit" className="add-button">Add</button>
+      </div>
+    </form>
+    {/* Display the list of events with Delete buttons */}
+    <div className="event-list">
+      <h3>Events:</h3>
+      <ul>
+        {events.map((event, index) => (
+          <li key={index}>
+            {event}
+            <button onClick={() => deleteEvent(index)} className="delete-button">
+              DELETE GDSHDSHDH
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+  <div className="left-column">
+    <h1>Site Settings</h1>
+    <button onClick={handleLeftColumnButtonClick} className="left-column-button">
+      Update
+    </button>
+    <div className="input-column">
+      {headers.map((header, index) => (
+        <div key={index}>
+          <h2>{header}</h2>
+          <textarea
+            className={`header-input input-for-${index}`} // Assign class based on the index
+            placeholder={`Input for ${header}`}
+            rows="4" // Number of visible text lines
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+  
   );
 };
 
