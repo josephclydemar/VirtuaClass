@@ -40,12 +40,14 @@ const LoginScreen = () => {
                         sessionStorage.setItem('currentUser', JSON.stringify(value));
                         navigate(`/${matchedAccount.account_type}`);
                     });
-            } else if (matchedAccount.password === password){
+            } else if (matchedAccount.password !== password){
                 console.log("Incorrect password.");
+                alert('Password is incorrect.');
             }
         }
         else if (!matchedAccount){
             console.log("Email does not exist.");
+            alert('Email does not exist.');
         }
         document.getElementById('loginEmailInput').value = '';
         document.getElementById('loginPasswordInput').value = '';
